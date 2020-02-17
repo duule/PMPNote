@@ -1,0 +1,78 @@
+﻿body {
+    background-color: #F3F6FA;
+    background-image: url("//image.wjx.com/images/newbg/dream-seeker-bg@2x.jpg");
+    background-image: url("//image.wjx.com/images/newbg/dream-seeker-bg.jpg") \0\9;
+    *background-image: url("//image.wjx.com/images/newbg/dream-seeker-bg.jpg");
+    background-repeat: repeat-x;
+    background-size: 1px 300px;
+}
+
+#jqContent {
+    width: 920px;
+    background: url("//image.wjx.com/images/newbg/dream-seeker@2x.jpg") no-repeat top center;
+    background: url("//image.wjx.com/images/newbg/dream-seeker.jpg") no-repeat top center \0\9;
+    *background: url("//image.wjx.com/images/newbg/dream-seeker.jpg") no-repeat top center;
+    background-size: 910px 144px;
+    padding-top: 120px;
+    margin: 0 auto;
+}
+.box {
+    box-shadow: 0px 1px 6px 0px rgba(205,220,245,1);
+}
+#headerCss {
+    position: relative;
+    background: white no-repeat;
+    width: 920px;
+    margin: 0 auto;
+}
+
+#mainCss {
+    background: white;
+    width: 920px;
+    margin: 0 auto;
+}
+
+#footercss {
+    width: 920px;
+    margin: 0 auto;
+    background: white;
+    height: 20px;
+}
+
+.surveyhead h1,
+.bluefont-16px {
+    color: #5A83E5;
+}
+
+input.submitbutton {
+    border: 1px solid transparent;
+    background: #5A83E5;
+    outline:none;
+}
+
+    input.submitbutton_hover, input.submitbutton:hover {
+        background: #486FCA;
+        color: #fff !important;
+    }
+.jqRadio {
+    background: transparent url(/images/jqradio114.png) no-repeat;
+    _background:transparent url(/images/jqradio114.gif) no-repeat;
+}
+.jqCheckbox {
+    background: transparent url(/images/jqcheck114.gif) no-repeat;
+}
+.jqChecked {
+    background-position: 0 -16px;
+}
+legend {
+    display: none;
+}
+
+fieldset {
+    border: 0;
+}
+
+#loadcss {
+    background-image: none;
+    background-color: #7496E9;
+}
