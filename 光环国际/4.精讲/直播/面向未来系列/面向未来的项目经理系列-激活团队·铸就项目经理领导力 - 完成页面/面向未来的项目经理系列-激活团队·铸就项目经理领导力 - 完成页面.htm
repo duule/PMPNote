@@ -1,0 +1,550 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0128)https://ks.wjx.top/wjx/join/completemobile2.aspx?activity=69956408&joinactivity=105452514378&jidx=2673&tvd=nilyZc59AtA%3d&jpm=15 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面</title>
+    
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/jqmobo.css">
+     
+    <script type="text/javascript" async="" charset="utf-8" src="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/core.php"></script><script src="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/hm.js"></script><script type="text/javascript">
+        var isWeiXin=0;
+        var isApp=0;
+        var joinactivity = '105452514378';
+        var activity="69956408";
+    </script>
+    
+    <script src="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/jquery.min.js"></script>
+    <script type="text/javascript">
+        !window.jQuery && document.write('<script src="//image.wjx.com/js/jquery-1.10.2.min.js"><\/script>');
+    </script>
+    
+    <style>
+
+
+body{background:#f7f7f7;}
+#toplogo{width:auto;margin:0 14px;border-bottom:1px dashed #D6D8D9;}
+.chuangGuanWrap{margin:0 14px;background:#fff;font-size: 16px;color: #333;}
+</style>
+<script type="text/javascript" src="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/html2canvas.js"></script></head>
+<body style="background: rgb(255, 255, 255);">
+    <div style="height:24px;" id="divTopHeight"></div>
+    
+    
+    <div class="chuangGuanWrap" id="chuangGuanWrap" style="text-align: center; padding: 0px 0 26px;">
+        <div class="formfield formfieldComplete" style="padding-bottom: 0px; border-bottom: 0px; margin-bottom: 0px;">
+            
+            <div id="divKaoShi">
+                <link href="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/wjxUI.css" rel="stylesheet">
+                <link href="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/setcepingreport.css" rel="stylesheet">
+                <style>
+                     .chuangGuanWrap{
+                        box-shadow:none;
+                        margin:0px !important;
+                    }
+                    div.formfield
+                    {
+                        padding:0px;
+                        margin:0px;
+                    }
+                    body
+                    {
+                        width:100%;
+                        min-width:320px;
+                        font-size:16px;
+                    }
+                    
+                </style>
+                <script>
+                    var activityId="69956408";
+                    var joinId="";
+                    var notShowChartWhenLoaded=1;//加载完成时显示图形
+                </script>
+                <script>
+                    document.oncontextmenu = document.ondragstart = document.onselectstart = function () {
+                        return false;
+                    }
+                    function setanswer(qur,index)
+                    {
+                        var hideCorrect=false;
+                        if(index=="2")
+                        {
+                            hideCorrect=true;
+                        }
+                        var dislist=divAnswer.firstChild.childNodes;
+                        var index=0;
+                        for(var i=0;i<dislist.length;i++)
+                        {
+                            if(dislist[i].childNodes.length>=1)
+                            {
+
+                                if(hideCorrect)
+                                {
+                              
+                                    var imgs=dislist[i].getElementsByTagName("img");
+                                    if(imgs.length<1)
+                                    {
+                                        dislist[i].style.display="none";
+                                    }
+                                    else
+                                    {
+
+                                        var display="none";
+                                        for(var j=0;j<imgs.length;j++)
+                                        {
+                                            if(imgs[j].alt=="错误")
+                                            {
+                                                index++;
+                                                display="";
+                                                break;
+                                            }
+                                        }
+                                        dislist[i].style.display=display;
+                               
+                                    }
+                                }
+                                else
+                                {
+                                    dislist[i].style.display="";
+                                }
+                            }
+                        }
+                        var diverrmsg=document.getElementById("diverrmsg");
+                        if(hideCorrect&&index==0)
+                        {
+                            if(!diverrmsg)
+                            {
+                                var divNewCond = document.createElement("div");
+                                divNewCond.innerHTML = "没有回答错误的题目";
+                                divNewCond.id="diverrmsg";
+                                divNewCond.className="diverrmsg";
+                                divAnswer.appendChild(divNewCond);
+                            }
+                            else
+                            {
+                                diverrmsg.style.display="";
+                            }
+                        }
+                        else
+                        {
+                         
+                            if(diverrmsg)
+                            {
+                                diverrmsg.style.display="none";
+                            }
+                        }
+                     
+                        var Ulchoosebutton=document.getElementById("Ulchoosebutton");
+                        var li=Ulchoosebutton.getElementsByTagName("li");
+                        for(var i=0;i<li.length;i++)
+                        {
+                            li[i].className="";
+                        }
+                        qur.parentNode.className="cur";
+                    } 
+                    function viewPaiHang(url){
+                        var divAward=document.getElementById("divAward");
+                        if(divAward){
+                            if(!window.hja){
+                                var retUrl=window.location.href;
+                                if(!window.location.hash)retUrl+="#draw";
+                                url+="&award=1&returl="+ encodeURIComponent(retUrl) ;
+                            }
+                        }
+                        window.location.href=url;
+                    }
+                    var hasSort=false;
+                    function sortAnswer(){
+                        if(hasSort)return;
+                        
+                      
+                        var divAnswer=document.getElementById("divAnswer");
+                        if (!divAnswer)
+                            return;
+                        if(divAnswer.style.display=="none")
+                            return;
+                        if (!window.localStorage) return;
+                        if (!window.JSON) return;
+
+                        var key = "sortorder_"+activityId;
+                        var sortobj=window.localStorage.getItem(key);
+                        if(!sortobj)
+                            return;
+                       
+                        var sortorders=new Object();
+                           
+                        sortorders= JSON.parse(sortobj);
+                        if(!sortorders)
+                            return;
+                        hasSort=true;
+                        var aDiv = divAnswer.getElementsByTagName('div');
+                        var arr = [];
+                        for(var i=0;i<aDiv.length;i++)
+                        {
+                            if(aDiv[i].getAttribute("topic"))
+                                arr.push(aDiv[i]);
+                        }
+                        divAnswer.style.display="none";
+                        arr.sort(function(a,b){
+                            var topic1=a.getAttribute('topic');var topic2=b.getAttribute('topic');
+                            var order1=sortorders[topic1]||0;var order2=sortorders[topic2]||0;
+                            return order1 - order2;
+                        });
+                        var allhtml="";
+                        for(var i=0;i<arr.length;i++)
+                        {
+                            var topic=arr[i].getAttribute("topic");
+                            if(topic && sortorders[topic]){
+                                var label=arr[i].getElementsByTagName("label");
+                                if(label[0])
+                                    label[0].innerHTML=sortorders[topic]+". ";
+                            }
+                            allhtml+=arr[i].outerHTML;
+                        }
+                        if(arr[0]){
+                            arr[0].parentNode.innerHTML=allhtml;
+                        }
+                        divAnswer.style.display="";
+                    }
+                    setTimeout(function(){
+                        sortAnswer();
+                    },2000);
+                    function openDialogByIframe(width, height, url,fullScreen) {  
+                        var winWinth = $(window).width(), winHeight = $(document).height();
+                        height=$(window).height()-40;
+                        width=$(window).width()-20;
+
+                        $("body").append("<div id='yz_popIframeDiv'></div>");  
+                        var eleOb=document.getElementById(url);
+                        var cHtml= "<div id='yz_popTanChu'><div style='position:relative;'><a id='yz_popTanChuClose' style='background:url(/images/bt_closed.gif) no-repeat;width:30px;height:30px;margin:-15px -18px 0 0;display:inline;float:right;cursor:pointer;position:absolute;right:0;'></a></div>";
+                        if(!eleOb){
+                            cHtml+="<iframe id='yz_popwinIframe' frameborder='0' hspace='0' src="+ url + "></iframe>";
+                        }
+                        else
+                            cHtml+="<div id='yz_popdivData' style='padding:10px;height:"+(height-30)+"px;overflow:auto;width:"+width+"px;'></div>";
+                        cHtml+="</div>";
+                        $("body").append(cHtml);
+                        $("#yz_popIframeDiv").css({  
+                            width : winWinth,  
+                            height : winHeight,  
+                            background : "#000",  
+                            position : "absolute",  
+                            left : "0",  
+                            top : "0"  
+                        });  
+                        $("#yz_popIframeDiv").fadeTo(0, 0.5);  
+                        var yz_popTanChuLeft = $(window).width() / 2 - width / 2;  
+                        var yz_popTanChuTop = $(window).height() / 2 - height / 2  
+                                + $(window).scrollTop();  
+                        $("#yz_popTanChu").css({  
+                            width : width,  
+                            height : height,   
+                            left : yz_popTanChuLeft,  
+                            top : yz_popTanChuTop,  
+                            background : "#fff",  
+                            position : "absolute" ,
+                            zIndex:1000
+                        });  
+                        if(eleOb){
+                            $("#yz_popdivData").html(eleOb.innerHTML);
+                        }
+                        var winIframeHeight = height;  
+                        $("#yz_popwinIframe").css({  
+                            width : width,  
+                            height : winIframeHeight,  
+                            "border-bottom" : "1px #ccc solid",  
+                            background : "#ffffff"
+                        });   
+                        $("#yz_popTanChuClose,#yz_popIframeDiv").click(function() {  
+                            $("#yz_popIframeDiv").remove();  
+                            $("#yz_popTanChu").remove();  
+                        });  
+                    }
+                    $(function(){
+                        $(".formfield").css("padding-bottom","0");
+                    });
+                    var isMobile=1;
+                </script>
+                <script type="text/javascript" src="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/savecanvasreport.js"></script>
+            </div>
+            <div class="description check__point-state" id="divdsc">
+                <h3 class="score-form__title" style="text-align:center;font-size:22px;padding:0;">面向未来的项目经理系列-激活团队·铸就项目经理领导力</h3><div class="score-form__content score-form__box-inner"><div class="score-form__ranking clearfix"><span class="beforeIcon"></span><div class="score-form__ranking-img pull-left"><div class="ranking-box__lt"><strong>13</strong> <h4>名次</h4></div></div><div class="score-form__ranking-box pull-left"> <div class="ranking-box__rt"><h3 style="display: block;">战胜了99.5%的人！</h3> <i>参与人数：2673</i><div>  <a href="javascript:viewPaiHang(&quot;/wjx/join/JoinActivityRank.aspx?activity=69956408&amp;name=%e6%9d%9c%e4%b9%90&amp;ranker=13&amp;costtime=35&amp;score=25&quot;);" class="ranking__btn wjxui-btn wjxui-btn-sm ">查看排行榜</a>  </div></div><div class="ranking__mobile--cup"></div>  </div></div><div class="dotted-line wjx-margin-dev clear"></div> <div class="score-form__details-wrapper"><h3 class="head-title-dot"><span class="vam">成绩单</span></h3><div class="score-form__list clearfix"><div class="score-form__items pull-left"><div class="form__items--rt figcaption"><div class="warp"><strong>杜乐</strong></div></div><div class="form__items--lt"> <i class="icon  score-form__icon--person"></i><h4>答题人</h4></div></div> <div class="score-form__items pull-left"><div class="form__items--rt figcaption form__score"><div class="warp"><strong>25</strong><em>/25</em></div></div><div class="form__items--lt"><i class="icon  score-form__icon--score"></i><h4>您的得分</h4></div> </div> <div class="score-form__items pull-left"><div class="form__items--rt figcaption"><div class="warp"><strong>5</strong><em>/5</em></div></div> <div class="form__items--lt"><i class="icon  score-form__icon--quantity"></i><h4>答对题数</h4></div> </div> </div></div><div class="score-form__details-wrapper"> <div class="clearfix"><h3 class="head-title-dot answer_detail_tit pull-left">答题解析</h3><div class="pull-right answer_detail" id="divShowError" style="visibility: visible;"> <ul id="Ulchoosebutton"><li class="cur"><a href="javascript:void(0);" onclick="setanswer(this,1);">全部题目</a></li><li><a href="javascript:void(0);" onclick="setanswer(this,2);">错题集</a></li></ul></div> </div> <div class="dotted-line wjx-margin-dev clear"></div><a href="javascript:" style="margin-top: 20px; display: none;" class="sumitbutton" onclick="document.getElementById(&#39;divShowError&#39;).style.visibility=&#39;visible&#39;;document.getElementById(&#39;divAnswer&#39;).style.display=&#39;&#39;;var divDownLoad=document.getElementById(&#39;divDownLoad&#39;);if(divDownLoad)divDownLoad.style.display=&#39;&#39;;this.style.display=&#39;none&#39;;sortAnswer();">查看答题解析</a><div class="score-form__dec-answer text-left" id="divAnswer" style=""><div class="query__data-result"><div class="data__items" topic="1"><div class="data__tit">基本信息：<span class="must">*</span> <span class="gray-deep">[矩阵文本题]</span></div><div class="data__key"><div><table cellspacing="0" style="width: 100%;font-size:14px;"><tbody><tr style="line-height:30px;"><th style="vertical-align: middle;text-align:left ;font-weight:normal;">(1)  姓名：</th><td style="vertical-align: middle; color: #555555; width: 40%;">杜乐</td></tr><tr style="line-height:30px;background:#f5f5f5;"><th style="vertical-align: middle;text-align:left ;font-weight:normal;">(2)  电话：</th><td style="vertical-align: middle; color: #555555; width: 40%;">15247173231</td></tr></tbody></table></div></div><div class="dotted-line wjx-margin-dev clear"></div></div><div class="data__items" topic="2"><div class="data__tit">请找出自己的班班哦：<span class="must">*</span> <span class="gray-deep"></span></div><div class="data__key"><div>您的回答：远程班‐蔡袁笛</div></div><div class="dotted-line wjx-margin-dev clear"></div></div><div class="data__items" topic="3"><div class="data__tit"><label>1. </label>在一个时间紧迫的项目期间，项目经理注意到两名团队成员之间的冲突让项目进度停滞不前。项目经理应该做些什么来恢复工作和管理冲突？&nbsp;&nbsp;<span style="color:#999;">[分值：5]</span></div><div class="data__key"><div>您的回答：C.要求双方通过分析情况来解决冲突，并与他们合作找到共同解决方案&nbsp;<img src="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/achievement_dui.png" alt="正确" style="vertical-align:middle;padding-bottom:2px;">&nbsp;&nbsp;<font color="#30a6f5">（得分：5）</font></div></div><div class="dotted-line wjx-margin-dev clear"></div></div><div class="data__items" topic="4"><div class="data__tit"><label>2. </label>—位新团队成员加入一个项目。项目经理的纪律严明，并期待按时参加每周会议。这位新成员来自一个文化自由的组织，习惯性参加各种会议迟到，当问到为什么迟到，该团队成员回应说他们忙于处理可交付成果，他们认为应该优先处理可交付成果。项目经理应该怎么做？&nbsp;&nbsp;<span style="color:#999;">[分值：5]</span></div><div class="data__key"><div>您的回答：D.强调基本规则并影响团队，以便所有人都了解并遵守这些规则&nbsp;<img src="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/achievement_dui.png" alt="正确" style="vertical-align:middle;padding-bottom:2px;">&nbsp;&nbsp;<font color="#30a6f5">（得分：5）</font></div></div><div class="dotted-line wjx-margin-dev clear"></div></div><div class="data__items" topic="5"><div class="data__tit"><label>3. </label>远程项目团队成员请求将项目会议时间更改为远程项目团队的工作时间内进行。然而,本地团队成员都不同意这项建议。项目经理下一步该怎么做？&nbsp;&nbsp;<span style="color:#999;">[分值：5]</span></div><div class="data__key"><div>您的回答：A.安排一次与所有各方的团队会议，确定一个适合的时间&nbsp;<img src="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/achievement_dui.png" alt="正确" style="vertical-align:middle;padding-bottom:2px;">&nbsp;&nbsp;<font color="#30a6f5">（得分：5）</font></div></div><div class="dotted-line wjx-margin-dev clear"></div></div><div class="data__items" topic="6"><div class="data__tit"><label>4. </label>在开发的最后一天，软件开发团队的项目主管宣布由于意外停电可能导致延期。由于测试时间有限，软件开发主管和测试主管之间展开激烈的讨论。下列哪一项冲突解决技术将提供长期解决方案？&nbsp;&nbsp;<span style="color:#999;">[分值：5]</span></div><div class="data__key"><div>您的回答：B.合作/解决问题&nbsp;<img src="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/achievement_dui.png" alt="正确" style="vertical-align:middle;padding-bottom:2px;">&nbsp;&nbsp;<font color="#30a6f5">（得分：5）</font></div></div><div class="dotted-line wjx-margin-dev clear"></div></div><div class="data__items" topic="7"><div class="data__tit"><label>5. </label>一个复杂项目包含对最终目标有不同看法的相关方。相关方就项目发起人确定的目标最终达成一致意见。之后,在项目执行阶段,发起人退休,相关方之间从此开始产生冲突。新任命的发起人希望知道如何才能根据目标重新调整相关方之间的关系。项目经理应该做什么?&nbsp;&nbsp;<span style="color:#999;">[分值：5]</span></div><div class="data__key"><div>您的回答：D.影响相关方以遵循约定的目标。&nbsp;<img src="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/achievement_dui.png" alt="正确" style="vertical-align:middle;padding-bottom:2px;">&nbsp;&nbsp;<font color="#30a6f5">（得分：5）</font></div></div><div class="dotted-line wjx-margin-dev clear"></div></div></div></div> </div></div>
+            </div>
+            
+            
+            
+            
+            
+        </div>
+       
+        
+        <div id="divAward" style="margin: 10px auto 20px;" tiptext="恭喜您抽到10元“良布竹浆抽纸”现金抵扣券！（提示：免费领券，36包整箱装。疫情来袭，卫生第一！——【奥买家】）" province="内蒙古" city="呼和浩特">
+            <style>
+                 .award{
+                    border-spacing: 8px;
+                    text-align:center;
+                    width:292px;
+                    height:292px;
+                    margin:0 auto;
+                    border-radius:8px;
+                }
+                .fastCj{
+                    background:#FF936E !important;
+                    background:linear-gradient(180deg,#FF936E 0%,#F64141 100%) !important;
+                    border-radius:6px !important;
+                    padding:0 !important;
+                }
+                .fastCj .fastA{
+                    background:#FF936E;
+                    background:linear-gradient(180deg,#FF936E 0%,#F64141 100%) !important;
+                    border-radius:6px !important;
+                    display:inline-block !important;
+                    width:86px;
+                    height:86px;
+                    line-height:25px;
+                    font-size:22px;
+                    color:#FFFFFF !important;
+                    padding:17px;
+                    box-sizing: border-box;
+                    text-decoration: none;
+                }
+                .Naward_active {
+                    background: #FFEDED !important;
+                    box-shadow: 0px 0px 5px 0px #F64141 !important;
+                }
+                .award td{
+                    word-break: break-all;
+                    width:86px;
+                    height:86px;
+                    color:#fff;
+                    background:#fff;
+                    box-shadow:0px 0px 5px 0px #EBEBEB;
+                    border-radius:5px;
+                }
+                .award img{
+                    width:34px;
+                    height:34px;
+                }
+                .award .line-t{
+                    font-size:14px;
+                    color:#888888;
+                }
+                .award .line-h{
+                    font-size:14px;
+                    color:#F64141;
+                }
+                .award td img,award td input{vertical-align:middle;}
+                
+                #userdialog .ui-input-text{
+                    margin: 12px 0;
+                }
+                @media screen and (min-width:320px) and (max-width:361px){
+                    .chuangGuanWrap{
+                        margin: 0 6px;
+                    }
+                }
+                 .shade_wrap{
+			        position: fixed;
+			        top:0;
+			        right: 0;	
+			        left: 0;	
+			        bottom: 0;	
+			        z-index: 10000;
+			        background:rgba(0,0,0,0.5);
+		        }
+		        .prize_box{
+			        position: absolute;;
+			        top:60%;
+			        left:50%;
+			        transform: translate(-50%,-50%);
+			        background: #fff;
+			        z-index:10001;
+			        border-radius:4px;
+			        width:84%;
+			        text-align: center;
+		        }
+                .p_headTit{
+                    height:93px;
+                    background:rgba(248,248,248,1);
+                    padding:0 20px;
+                    overflow: hidden;
+		        }
+		        .p_headTit h4{
+			        padding-top: 24px;	
+			        font-size:16px;
+                    font-weight:400;
+                    color:rgba(37,37,37,1);
+                    line-height:22px;
+		        }
+		        .p_headTit p{
+			        padding-top: 8px;	
+			        font-size:14px;
+                    font-weight:400;
+                    color:rgba(255,152,0,1);
+                    line-height:20px;
+		        }
+		        .p_cont{
+			        padding:0 24px;
+		        }
+		        .p_cont_desc{
+			        font-size:13px;
+                    font-weight:400;
+                    color:rgba(140,140,140,1);
+                    line-height:18px;
+                    padding:25px 20px 20px;
+		        }
+		        .prizeItem{
+			        height:68px;
+                    background:rgba(254,241,230,1);
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    font-size:14px;
+                    font-weight:500;
+                    color:rgba(254,128,0,1);
+                    line-height:20px;
+                    border-radius:8px;
+                    margin-bottom: 12px;
+		        }
+		        .getBtn{
+			        width:96px;
+			        flex: 0 0 auto;
+			        display: flex;
+			        align-items: center;
+
+		        }
+		        .prizename{
+			        flex:1 1 auto;
+			        align-items: center;
+			        padding:0 16px;
+			        display: flex;
+		        }
+            </style>
+            <div style="color: Red; margin-bottom: 5px;" id="draw">恭喜您获得了1次抽奖机会！</div>
+            <table class="award" id="tbAward" align="center" style="background: #F5F5F5;" cellspacing="30">
+                <tbody><tr>
+                    <td><div style="color:#ff4801;margin-top:10px;" onclick="if(this.title)alertNew(this.title);"><span style="font-size:20px;">20</span>元<br>微信红包</div></td>
+                    <td><span style="color:#888888;font-size:12px;">感谢参与</span></td>
+                    <td><div style="color:#ff4801;margin-top:10px;" onclick="if(this.title)alertNew(this.title);"><span style="font-size:20px;">10</span>元<br>现金券</div></td>
+                </tr>
+                <tr>
+                    <td><span style="color:#888888;font-size:12px;">感谢参与</span></td>
+                    <td class="fastCj">
+                        <a class="fastA" onclick="if(window.clickstat)clickstat();getaward();" style="color: #fff; background: #e87814; margin: 0;">立即抽奖</a>
+                    </td>
+                    <td><span style="color:#888888;font-size:12px;">感谢参与</span></td>
+                </tr>
+                <tr>
+                    <td><div style="color:#ff4801;margin-top:10px;" onclick="if(this.title)alertNew(this.title);"><span style="font-size:20px;">10</span>元<br>微信红包</div></td>
+                    <td><span style="color:#888888;font-size:12px;">感谢参与</span></td>
+                    <td><div style="color:#ff4801;margin-top:10px;" onclick="if(this.title)alertNew(this.title);"><span style="font-size:20px;">6</span>瓶<br>安慕希酸奶</div></td>
+                </tr>
+            </tbody></table>
+        </div>
+        
+        <script type="text/javascript">
+            var awardData = "10元微信红包〒101§6瓶安慕希酸奶〒100§20元微信红包〒10§10元现金券〒10,4773〒https://m.aomygod.com/act-richang-waituiliangbu29.9.html?tk=ca70WCtUBfT〒0〒";
+            var sa = 0;
+            var ea = 0;
+            var gender=0;
+            var marriage=0;
+            var education="";
+            var jpmatch="";
+            var hja=0;
+            var notDisplayName=1;
+            var rurl="";
+            var valueMatch=1;
+            var isAValid='';
+            var allowMulti=0;
+            var isRandShowAward=1;
+        </script>
+           
+       
+        <script type="text/javascript" src="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/joinawardactivitymobo.js"></script>
+
+        
+        
+        <div id="userdialog" style="background: #FFF; max-width: 500px; margin: 20px auto;width:92%; display: none;">
+            
+        </div>
+        
+    </div>
+    <div style="display: none;" id="showImgBox">
+    </div>
+    
+
+     
+     
+   
+
+    <div style="padding:20px">
+        <a href="https://ks.wjx.top/urlreport.aspx?url=69956408&amp;cm=1" style="float: right; color: #aaa; font-size: 13px;" class="reportto" rel="nofollow">举报</a>
+        <div style="clear: both;">
+        </div>
+    </div>
+     <div id="divPowerBy" style="margin: 0 auto;" class="logofooter"><div class="wjfooter"><span id="spanPower"><a href="https://www.wjx.cn/mobile/index.aspx" target="_blank" title="问卷星_不止问卷调查/在线考试">问卷星</a>&nbsp;提供技术支持</span></div></div>
+
+    <div id="dialog" style="display: none;">
+        <div id="divAwardDialog">
+            <div class="header">
+                手机号码
+            </div>
+            <!-- /header -->
+            <div data-role="content">
+                <label for="mobile">
+                </label>
+                <input type="text" name="mobile" id="mobile1" value="" placeholder="输入手机号码，我们充值话费到此手机">
+                <label for="mobile2">
+                </label>
+                <input type="text" name="mobile2" id="mobile2" value="" placeholder="重复输入手机号码">
+                <div>
+                    <input type="button" onclick="provideMobile();" value="确认">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+        var cqType=6;
+        var isVip=0;
+        var isAValid='';
+        var flist=0;
+        var isHardadvitisement=0;
+        var HardadvitisementAwardId=0;
+        var isrejoin=0;
+        var jclacount =0;
+    </script>
+    <script src="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/completemob.js"></script>
+     <script type="text/javascript">
+         function loadLocalRes() {
+             var cdnDomain = "//image.wjx.com";
+                 try {
+                     if (typeof submitSuccess == 'undefined' && cdnDomain) {
+                         var links = document.getElementsByTagName("link");
+                         for (var i = 0; i < links.length; i++) {
+                             if (links[i].href && links[i].href.indexOf(cdnDomain) > -1) {
+                                 var newHref = links[i].href.replace(cdnDomain, "//www.wjx.cn");
+                                 var style=$('<link rel="stylesheet" type="text/css" href="' + newHref + '" />');
+                                 style.appendTo('head');
+                             }
+                         }
+                         var scripts = document.getElementsByTagName("script");
+                         for (var i = 0; i < scripts.length; i++) {
+                             if (!scripts[i].src) continue;
+                             if (scripts[i].src.indexOf(cdnDomain) == -1) continue;
+                             var newHref = scripts[i].src.replace(cdnDomain, "//www.wjx.cn");
+                             document.write('<script src="' + newHref + '"><\/script>');
+                         }
+                     }
+                 }
+                 catch (ex) {
+                 }
+             }
+             loadLocalRes();
+    </script>
+    <div style="display: none;"><script src="./面向未来的项目经理系列-激活团队·铸就项目经理领导力 - 完成页面_files/z_stat.php" language="JavaScript" async="" onload="if(window.loadCzc)loadCzc();"></script><script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?21be24c80829bd7a683b2c536fcf520b";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();</script></div>
+    
+
+
+</body></html>
